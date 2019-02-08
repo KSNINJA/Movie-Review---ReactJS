@@ -12,7 +12,7 @@ export class Input extends React.Component{
         if(event.keyCode === 13)
         {
           let search = document.getElementById('search-input').value;
-          $.ajax('http://www.omdbapi.com/?apikey=56439a3c&t='+search)
+          $.ajax('https://www.omdbapi.com/?apikey=56439a3c&t='+search)
           .done(function(response){
               this.setState({response});
           }.bind(this))
